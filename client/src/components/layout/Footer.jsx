@@ -1,4 +1,5 @@
 import React from 'react';
+import { MapPin, Phone, Mail, Globe } from 'lucide-react';
 
 const Footer = () => {
   const servicesLinks = [
@@ -43,22 +44,22 @@ const Footer = () => {
             
             <ul className="space-y-4 text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">
               <li className="flex items-start gap-3">
-                <span className="text-xl">📍</span>
+                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span>B-79, Ground Floor, Block-B, Sector-88, Noida UP: 201305</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-xl">📞</span>
+                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="flex flex-col">
                   <a href="tel:+919716866809" className="hover:text-primary transition-colors">+91 9716866809</a>
                   <a href="tel:+919899587246" className="hover:text-primary transition-colors">+91 9899587246</a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-xl">✉️</span>
+                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a href="mailto:info@vermafiber.com" className="hover:text-primary transition-colors">info@vermafiber.com</a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-xl">🌐</span>
+                <Globe className="w-5 h-5 text-primary flex-shrink-0" />
                 <a href="http://www.vermafiber.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">www.vermafiber.com</a>
               </li>
             </ul>
