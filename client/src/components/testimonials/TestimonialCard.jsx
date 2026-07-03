@@ -1,8 +1,9 @@
 import React from 'react';
+import { Star } from 'lucide-react';
 
 const TestimonialCard = ({ name, company, review, rating }) => {
   return (
-    <div className="relative bg-white dark:bg-[#0D1628] rounded-2xl p-8 border border-gray-100 dark:border-primary/20 shadow-sm hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 h-full flex flex-col group">
+    <div className="relative bg-white dark:bg-[#0D1628] rounded-2xl p-8 border border-gray-100 dark:border-primary/20 hover:border-primary/40 shadow-sm hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 h-full flex flex-col group">
       
       {/* Large Background Quote Mark */}
       <span className="absolute top-4 right-6 text-8xl text-gray-100 dark:text-gray-800/50 font-serif leading-none select-none pointer-events-none group-hover:text-primary/10 transition-colors duration-300">
@@ -14,10 +15,11 @@ const TestimonialCard = ({ name, company, review, rating }) => {
         
         {/* Dynamic Stars */}
         <div className="flex gap-1 mb-6">
-          {Array(rating).fill("⭐").map((star, index) => (
-            <span key={index} className="text-accent text-lg filter drop-shadow-sm">
-              {star}
-            </span>
+          {Array.from({ length: rating }).map((_, index) => (
+            <Star 
+              key={index} 
+              className="w-5 h-5 fill-amber-400 text-amber-400 filter drop-shadow-sm" 
+            />
           ))}
         </div>
 

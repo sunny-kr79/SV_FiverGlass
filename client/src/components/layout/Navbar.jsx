@@ -10,15 +10,14 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Products', href: '#products' },
+    { name: 'Services & Products', href: '#services' },
     { name: 'Clients', href: '#clients' },
     { name: 'Contact', href: '#contact' }
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'products', 'clients', 'contact'];
+      const sections = ['home', 'about', 'services', 'clients', 'contact'];
       let currentIdx = sections.length - 1;
 
       while (currentIdx >= 0) {

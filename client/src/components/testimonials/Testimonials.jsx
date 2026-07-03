@@ -46,9 +46,9 @@ const Testimonials = () => {
   return (
     <section className="w-full py-20 bg-gray-50 dark:bg-[#060C1A] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -59,15 +59,14 @@ const Testimonials = () => {
             What Clients Say
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase mt-1">
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Testimonials
-            </span>
+            <span className="text-secondary">Client </span>
+            <span className="text-secondary">Testimonials</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-secondary to-accent mx-auto mt-6 rounded-full opacity-80"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 rounded-full opacity-80"></div>
         </motion.div>
 
         {/* Testimonial Grid mapping logic */}
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
@@ -75,7 +74,7 @@ const Testimonials = () => {
           className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10"
         >
           {testimonials.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               variants={itemVariants}
               whileHover={{ y: -8, scale: 1.02, boxShadow: "0px 15px 30px rgba(0,0,0,0.2)" }}

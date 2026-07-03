@@ -22,9 +22,9 @@ const About = () => {
             viewport={{ once: true }}
             className="flex flex-col"
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold uppercase mb-6 text-[#0f172a] dark:text-white tracking-widest">
-              <span className="text-[#0077FF]">Who </span>
-              We Are
+            <h2 className="text-4xl md:text-5xl font-extrabold uppercase mb-6 tracking-widest text-gray-900 dark:text-white">
+              <span className="text-primary">Who </span>
+              <span className="text-secondary">We Are</span>
             </h2>
             
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">

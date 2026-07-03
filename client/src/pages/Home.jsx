@@ -3,7 +3,6 @@ import Navbar from '../components/layout/Navbar';
 import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
 import Services from '../components/services/Services';
-import Products from '../components/products/Products';
 import WhyChooseUs from '../components/why/WhyChooseUs';
 import Testimonials from '../components/testimonials/Testimonials';
 import Clients from '../components/clients/Clients';
@@ -24,7 +23,6 @@ const Home = () => {
         <div id="home"><Hero /></div>
         <div id="about"><About /></div>
         <div id="services"><Services /></div>
-        <div id="products"><Products /></div>
         <div id="why"><WhyChooseUs /></div>
         <div id="testimonials"><Testimonials /></div>
         <div id="clients"><Clients /></div>
