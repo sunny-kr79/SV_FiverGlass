@@ -49,9 +49,9 @@ const Hero = () => {
               hidden: { opacity: 0, y: 40 },
               show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
             }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight mb-6 uppercase"
           >
-            <span className="text-white from-primary to-secondary dark:text-white block mb-2 transition-colors duration-300">Strong, Reliable &</span>
+            <span className="text-white dark:text-white block mb-2 transition-colors duration-300 ">Strong, Reliable &</span>
             <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent pb-2">Trusted FRP Solutions</span>
           </motion.h1>
 
@@ -106,7 +106,7 @@ const Hero = () => {
               className="flex flex-col items-center sm:items-start"
             >
               <span className="text-3xl sm:text-4xl font-extrabold text-white dark:text-white">20+</span>
-              <span className="text-xs sm:text-sm text-gray-300 dark:text-gray-200 font-medium tracking-wider mt-1">YEARS EXP</span>
+              <span className="text-xs sm:text-sm text-white dark:text-gray-200 font-medium tracking-wider mt-1">YEARS EXP</span>
             </motion.div>
 
             <div className="w-px h-15 bg-gray-100 dark:bg-gray-100"></div>
@@ -117,7 +117,7 @@ const Hero = () => {
               className="flex flex-col items-center sm:items-start"
             >
               <span className="text-3xl sm:text-4xl font-extrabold text-white dark:text-white">1000+</span>
-              <span className="text-xs sm:text-sm text-gray-300 dark:text-gray-200 font-medium tracking-wider mt-1">PROJECTS</span>
+              <span className="text-xs sm:text-sm text-white dark:text-gray-200 font-medium tracking-wider mt-1">PROJECTS</span>
             </motion.div>
 
             <div className="w-px h-15 bg-gray-100 dark:bg-gray-100 "></div>
