@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+
 const Hero = () => {
   return (
     <section className="
@@ -75,7 +76,7 @@ const Hero = () => {
             }}
           >
             <motion.a
-              href="#quote"
+              href="#contact"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3.5 rounded-full font-semibold text-base sm:text-lg bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-orange-500 text-white shadow-[0_4px_14px_0_rgba(255,140,0,0.39)] transition-all flex items-center justify-center"
