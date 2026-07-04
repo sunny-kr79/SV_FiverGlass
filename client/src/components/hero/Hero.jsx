@@ -52,7 +52,7 @@ const Hero = () => {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight mb-6 uppercase"
           >
             <span className="text-white dark:text-white block mb-2 transition-colors duration-300 ">Strong, Reliable &</span>
-            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent pb-2">Trusted FRP Solutions</span>
+            <span className="bg-gradient-to-r from-secondary to-secondary bg-clip-text text-transparent pb-2">Trusted FRP Solutions</span>
           </motion.h1>
 
           {/* Description */}

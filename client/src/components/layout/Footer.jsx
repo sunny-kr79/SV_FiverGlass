@@ -14,8 +14,7 @@ const Footer = () => {
 
   const quickLinks = [
     { name: "Who We Are", path: "#about" },
-    { name: "Services", path: "#services" },
-    { name: "Products", path: "#products" },
+    { name: "Services & Products", path: "#services & Products" },
     { name: "Clients", path: "#clients" },
     { name: "Contact Us", path: "#contact" }
   ];
@@ -23,25 +22,25 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-[#040910] border-t border-gray-200 dark:border-gray-800/50 pt-16 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
-          
+
           {/* COLUMN 1: Brand & Contact */}
           <div className="lg:col-span-2 pr-0 lg:pr-8">
             <div className="flex items-center gap-3 mb-3">
-              <img 
-                src="/logo.png" 
-                alt="Logo" 
+              <img
+                src="/logo.png"
+                alt="Logo"
                 className="w-40 h-15 object-contain"
                 onError={(e) => { e.target.src = '/public/logo.png'; }} // Fallback if user kept previous name
               />
             </div>
-            
+
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
               India's trusted manufacturer of customized fiberglass products &mdash; industrial tanks to water park slides, sculptures to automobile parts.
             </p>
-            
+
             <ul className="space-y-4 text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -50,7 +49,6 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:+919716866809" className="hover:text-primary transition-colors">+91 9716866809</a>
                   <a href="tel:+919899587246" className="hover:text-primary transition-colors">+91 9899587246</a>
                 </div>
               </li>
@@ -64,11 +62,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* COLUMN 2: Services Links */}
           <div>
             <h3 className="text-lg font-bold text-[#0f172a] dark:text-gray-100 uppercase mb-8 drop-shadow-sm">
-              Services
+              Services & Products
             </h3>
             <ul className="space-y-5">
               {servicesLinks.map((link, index) => (
@@ -81,7 +79,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           {/* COLUMN 3: Quick Links & CTA */}
           <div>
             <h3 className="text-lg font-bold text-[#0f172a] dark:text-gray-100 uppercase mb-8 drop-shadow-sm">
@@ -96,13 +94,13 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            
+
             {/* CTA BOX */}
             <div className="bg-white dark:bg-[#0D1628] border border-gray-200 dark:border-primary/20 p-5 rounded-xl shadow-md mt-4">
               <p className="text-gray-900 dark:text-gray-100 font-bold mb-4 drop-shadow-sm">
                 Need a custom FRP solution? Let's talk!
               </p>
-              <button 
+              <button
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="w-full py-3 bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-primary text-white font-bold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all outline-none"
               >
@@ -110,10 +108,10 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          
+
         </div>
       </div>
-      
+
       {/* BOTTOM STRIP */}
       <div className="w-full bg-gray-200 dark:bg-[#02050A] border-t border-gray-300 dark:border-gray-800 py-6 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -121,14 +119,14 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Sunny Verma Fiber Glass. All rights reserved.
           </p>
           <p className="text-gray-500 dark:text-gray-500 text-sm font-medium flex items-center gap-1.5">
-            Made with <span className="text-red-500 mx-0.5 text-lg">❤️</span> | 
+            Made with <span className="text-red-500 mx-0.5 text-lg">❤️</span> |
             <a href="mailto:info@vermafiber.com" className="hover:text-primary ml-1 transition-colors">
               info@vermafiber.com
             </a>
           </p>
         </div>
       </div>
-      
+
     </footer>
   );
 };

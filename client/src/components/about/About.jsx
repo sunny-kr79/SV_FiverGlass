@@ -63,7 +63,7 @@ const About = () => {
             className="relative h-[300px] lg:h-[650px] w-full rounded-2xl overflow-hidden shadow-2xl group mt-8 lg:mt-0"
           >
             <video
-              src="/about-video.mp4"
+              src="/about-video1.mp4"
               autoPlay
               muted
               loop

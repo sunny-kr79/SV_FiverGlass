@@ -89,7 +89,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-[17px] font-bold text-gray-900 dark:text-white mb-2">Phone Number</h4>
                   <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed">
-                    +91 971 686 6809<br />+91 989 958 7246
+                    +91 9899587246
                   </p>
                 </div>
               </motion.div>
@@ -130,13 +130,13 @@ const Contact = () => {
               </div>
             )}
 
-           <form action="https://formsubmit.co/dharmu6669777@gmail.com" method="POST" className="space-y-6">
-  <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_subject" value="New Contact Message" />
-  <input type="hidden" name="_template" value="table" />
-  <input type="hidden" name="_next" value="https://sv-fiver-glass.vercel.app/" />  {/* ← ADD THIS */}
-  <input type="text" name="_honey" style={{ display: "none" }} />
-  {/* ...rest of your form */}
+            <form action="https://formsubmit.co/dharmu6669777@gmail.com" method="POST" className="space-y-6">
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New Contact Message" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://sv-fiver-glass.vercel.app/" />  {/* ← ADD THIS */}
+              <input type="text" name="_honey" style={{ display: "none" }} />
+              {/* ...rest of your form */}
 
 
               <div>
@@ -189,7 +189,7 @@ const Contact = () => {
                 disabled={isSubmitting}
                 whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                 whileTap={!isSubmitting ? { scale: 0.98 } : {}}
-                className={`w-full py-3.5 rounded-md font-bold text-sm text-white transition-all transform flex justify-center items-center gap-2 ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-orange-400 to-[#FF4500] shadow-[0_4px_14px_0_rgba(255,100,0,0.39)] hover:shadow-[0_6px_20px_rgba(255,100,0,0.23)] border-none'}`}
+                className={`w-full py-3.5 rounded-md font-bold text-sm text-white from-secondary to-secondary  transition-all transform flex justify-center items-center gap-2 ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-orange-400 to-[#FF4500] shadow-[0_4px_14px_0_rgba(255,100,0,0.39)] hover:shadow-[0_6px_20px_rgba(255,100,0,0.23)] border-none'}`}
               >
                 {isSubmitting ? (
                   <span>Sending...</span>
